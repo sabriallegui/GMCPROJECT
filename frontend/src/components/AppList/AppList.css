@@ -1,0 +1,29 @@
+.appList {
+  width: 100%;
+  height: calc(100vh - 150px);
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.appList .col-20 {
+  max-width: 18%;
+  margin: 0 1%;
+  height: fit-content;
+}
+
+.appList .noApp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #aeaeae;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .appList{
+    height: calc(100vh - 250px);
+  }
+}

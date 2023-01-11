@@ -1,0 +1,102 @@
+.card {
+  position: relative;
+  height: 200px;
+  width: 18%;
+  margin: 50px 1%;
+}
+.card .cardImage {
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  text-align: center;
+  z-index: 20;
+}
+
+.card .cardImage > img {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 30px auto 0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card .cardBody {
+  position: relative;
+  top: 100px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: #ffffff;
+  padding: 12px 24px;
+  color: #452452;
+  min-height: 170px;
+  transition: all 0.5s;
+}
+
+.card:hover .cardBody {
+  background-color: #7858b1;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.card .cardBody .appName {
+  margin-top: 30px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card .cardBody .description {
+  font-size: 14px;
+  margin: 12px 0;
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.card .cardBody .cardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+}
+
+.card .cardBody .cardBottom .ownerName {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.card .cardBody .cardBottom .goDetails {
+  border: 1px solid #aeaeae;
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    width: 23%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 31%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .card {
+    min-width: 48%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card {
+    min-width: 98%;
+  }
+}

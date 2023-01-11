@@ -1,0 +1,71 @@
+.appLoading {
+  position: relative;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-40%);
+}
+
+.appDetail .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5dcf5;
+  padding: 24px;
+  color: #452452;
+}
+
+.appDetail .header .left {
+  display: flex;
+  align-items: center;
+}
+
+.appDetail .header .left img {
+  object-fit: contain;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.appDetail .header .left .info {
+  margin-left: 16px;
+}
+
+.appDetail .header .left .info .name {
+  font-weight: bold;
+}
+
+.appDetail .header .left .info .ownerName {
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.appDetail .header .right .download {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #40e95f;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.appDetail .body {
+  width: 90%;
+  margin: 32px auto;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 24px;
+  line-height: 24px;
+  color: #727373;
+  max-height: 410px;
+  overflow-y: auto;
+}
+
+.appDetail .body .title {
+  font-size: 24px;
+  color: #727373;
+  margin: 16px 0;
+}
+
+@media only screen and (max-width: 425px) {
+  .appDetail .body {
+    max-height: 225px;
+  }
+}

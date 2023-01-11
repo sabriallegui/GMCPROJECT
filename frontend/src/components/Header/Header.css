@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #7858b1;
+}
+
+.header .appName {
+  font-style: italic;
+  font-size: 20px;
+  color: #ffffff;
+}
+.header .searchContainer {
+  flex: 1;
+  padding: 0 32px;
+}
+
+.header .searchContainer > input {
+  width: 60%;
+  margin: 0 20%;
+  height: 40px;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  outline: 0;
+  text-indent: 10px;
+}
+
+.header .loginButton {
+  font-size: 14px;
+  border: 1px solid #ffffff;
+  padding: 8px 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ffffff;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 425px) {
+  .header {
+    flex-direction: column;
+  }
+  .header .searchContainer {
+    width: 100%;
+    padding: 0;
+  }
+
+  .header .searchContainer > input {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
